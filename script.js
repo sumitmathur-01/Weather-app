@@ -33,7 +33,7 @@ async function getWeather(city) {
     let weatherTemp = result.main.temp;
     weatherTemp = weatherTemp - 273;
     const temp = weatherTemp.toFixed(2);
-    temprature.innerHTML = `${temp}°C`;
+    temprature.innerHTML = `${Math.floor(temp)}°C`;
 
     const weatherDesc = result.weather[0].description;
     discription.innerHTML = weatherDesc;
