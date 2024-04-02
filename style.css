@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: url(./weather.jpg);
+    background-repeat: repeat;
+    background-size: 30rem;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.searchBar {
+    height: 5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    position: relative;
+}
+
+input {
+    height: 3rem;
+    width: 25rem;
+    padding-left: 25px;
+    background-color: rgb(90, 90, 90);
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#error {
+    position: absolute;
+    bottom: -30px;
+    background-color: #f66358;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: none;
+}
+
+button {
+    height: 3rem;
+    width: 3.5rem;
+    font-size: 20px;
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(255, 213, 0);
+    font-weight: 800;
+}
+
+.weatherBox {
+    position: relative;
+    height: 25rem;
+    width: 22rem;
+    margin-top: 5rem;
+    background-color: transparent;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    background-color: rgba(151, 151, 151, 0.571);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.weather {
+    font-size: 20px;
+    font-weight: 600;
+}
